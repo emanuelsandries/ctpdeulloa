@@ -50,11 +50,17 @@ font-family: 'Montserrat', sans-serif;*/
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0);
+    -webkit-text-stroke: 1px var(--dark-hover);
+    transition-duration: 200ms;
+    letter-spacing: 0.3125rem;
 }
 
 .navbar--anchor:hover{
     color: var(--dark-hover);
+    font-weight: 500;
+    -webkit-text-stroke: 0 var(--dark-hover);
 }
 
 .navbar-button{
@@ -62,10 +68,10 @@ font-family: 'Montserrat', sans-serif;*/
     padding-block: 6px;
     padding-inline: 12px;
     border-radius: 6px;
-    -webkit-border-radius: 6px;
-    -moz-border-radius: 6px;
-    -ms-border-radius: 6px;
-    -o-border-radius: 6px;
+    -webkit-border-radius:6px;
+    -moz-border-radius:6px;
+    -ms-border-radius:6px;
+    -o-border-radius:6px;
 }
 
 .navbar-button:hover{
@@ -75,9 +81,10 @@ font-family: 'Montserrat', sans-serif;*/
 .navbar-button a{
     text-decoration: none;
     color:white;font-family: 'Lato', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 1rem;
 }
+
 
 /*Media Queries*/
 @media (max-width: 640px) {

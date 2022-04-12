@@ -1,8 +1,27 @@
 .career{
     height: 100%;
-    width: 100%;
+    width: calc(100% - 48PX);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-inline: 24px;
+    gap: 1rem;
+}
+
+.career--cardscontainer{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    width: 100%;
+}
+
+@media (max-width: 460px) {
+    .career--cardscontainer{
+        overflow-x: scroll;
+        display: flex;
+        overscroll-behavior-x: contain;
+       scroll-snap-type: x proximity;
+    }
 }

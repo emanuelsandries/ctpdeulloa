@@ -1,0 +1,61 @@
+.career--card{
+    background-color: beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-block: 0.5rem;
+    padding-inline: 0.5rem;
+    height: 10rem;
+    max-height: 400px;
+    border-radius: 0.375rem;
+    -webkit-border-radius: 0.375rem;
+    -moz-border-radius: 0.375rem;
+    -ms-border-radius: 0.375rem;
+    -o-border-radius: 0.375rem;
+}
+
+.card--img{
+    background-color: rebeccapurple;
+    width: 100%;
+    height: 100%;
+}
+
+.card-title{
+    color: var(--dark-hover);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.card-buttton{
+    color:white;
+    background-color: var(--main-blue-off);
+    border-radius: 0.375rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    padding-block: 0.3rem;
+    text-decoration: none;
+    width: 100%;
+    -webkit-border-radius: 0.375rem;
+    -moz-border-radius: 0.375rem;
+    -ms-border-radius: 0.375rem;
+    -o-border-radius: 0.375rem;
+}
+
+.card-buttton:hover{
+    background-color: var(--main-blue);
+}
+
+@media (max-width: 460px) {
+    .career--card{
+    position: relative;
+    scroll-snap-align: center;
+    height: 50vh;
+    min-width: 80%;
+    max-width: 320px;
+    }
+}
