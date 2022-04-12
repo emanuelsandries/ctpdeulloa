@@ -2,12 +2,19 @@
 
 <head>
     <title>CTP de Ulloa</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="./styles/header.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./styles/global.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <!--Components -->
+    <link rel="stylesheet" href="./styles/header.css">
+    <!-- layouts -->
     <link rel="stylesheet" href="./styles/herolayout.css">
     <link rel="stylesheet" href="./styles/careerlayout.css">
-    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/aboutuslayout.css">
+    <link rel="stylesheet" href="./styles/contactlayout.css">
+    <link rel="stylesheet" href="./styles/enrollmentlayout.css">
+    <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -18,45 +25,66 @@
 <body>
     <header class="header">
         <div class="header--wrapper">
-            <div class="logo">
-                <img src="./public/esandries-logo.svg" alt="ESandries logo " class="logo--esandries" />
+            <a href="#herosection" class="logo">
+                <img src="./public/esandries-logo.svg" alt="ESandries logo" class="logo--esandries" />
                 <p class="logo--with">x</p>
                 <p class="logo--ctpu">CTPU</p>
-            </div>
+            </a>
+
             <div class="menu">
                 <img src=".//public/menu-icon.svg" alt="" class="menu--icon">
             </div>
             <nav class="navbar">
                 <ul class="navbar--list">
                     <li class="navbar--item">
-                        <a href="" class="navbar--anchor">Acerca de</a>
+                        <a href="#aboutussection" class="navbar--anchor">Acerca de</a>
+                    </li>
+
+                    <li class="navbar--item">
+                        <a href="#enrollmentsection" class="navbar--anchor">Admisión</a>
                     </li>
                     <li class="navbar--item">
-                        <a href="" class="navbar--anchor">Blog</a>
-                    </li>
-                    <li class="navbar--item">
-                        <a href="" class="navbar--anchor">Admisión</a>
-                    </li>
-                    <li class="navbar--item">
-                        <a href="" class="navbar--anchor">Contacto</a>
+                        <a href="#contactsection" class="navbar--anchor">Contacto</a>
                     </li>
                 </ul>
             </nav>
             <div class="navbar-button">
-                <p>Especialidades</p>
+                <a href="#career">Especialidades</a>
             </div>
         </div>
     </header>
     <div class="main">
-        <section class="hero">
+        <section class="hero" id="herosection">
             <div class="hero--container">
                 <p class="hero--text">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti sit porro illo earum sapiente, officia, impedit voluptate consequuntur itaque veritatis eveniet delectus, eum cupiditate odio. Porro dolores ut sapiente quam.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti sit porro illo earum sapiente,
+                    officia, impedit voluptate consequuntur itaque veritatis eveniet delectus, eum cupiditate odio.
+                    Porro dolores ut sapiente quam.
                 </p>
             </div>
         </section>
-        <section class="career">
-            <h1>Hola cristo rey</h1>
+        <section class="career" id="career">
+            <h2 class="career--title">Especialidades</h2>
+            <p>Esa sección sigue en construcción por favor comunicarse con Emanuel Sandries para consultas</p>
+            <div class="career--cardscontainer">
+                <div class="career--card">
+                    <!-- <img src="" alt="Imagen de especialidad">
+                    <h3>Título</h3>
+                    <a href="#">Sabe más</a> -->
+                </div>
+            </div>
+        </section>
+        <section class="aboutus" id="aboutussection">
+            <h2 class="aboutus--title">Acerca del CTP de Ulloa</h2>
+            <p>Esa sección sigue en construcción por favor comunicarse con Emanuel Sandries para consultas</p>
+        </section>
+        <section class="enrollment" id="enrollmentsection">
+            <h2 class="enrollment--title">Admisión 2023</h2>
+            <p>Está sección sigue en construcción por favor comunicarse con Emanuel Sandries para Consultas</p>
+        </section>
+        <section class="contact" id="contactsection">
+            <h2 class="contact--title">Contacte al CTP de Ulloa</h2>
+            <p>Esa sección sigue en construcción por favor comunicarse con Emanuel Sandries para consultas</p>
         </section>
     </div>
 </body>
