@@ -3,15 +3,18 @@
     width: calc(100% - 48PX);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
     padding-inline: 24px;
-    gap: 1rem;
+}
+
+.careermobiledescription{
+    display: none;
 }
 
 .career--cardscontainer{
     display: grid;
-    gap: 20px;
+    gap: 1rem;
     grid-template-columns: repeat(4, 1fr);
     max-width: 1200px;
     width: 100%;
@@ -23,5 +26,9 @@
         display: flex;
         overscroll-behavior-x: contain;
        scroll-snap-type: x proximity;
+       padding-block: 1rem;
+    }
+    .careermobiledescription{
+        display: block;
     }
 }
