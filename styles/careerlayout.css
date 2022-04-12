@@ -3,7 +3,7 @@
     width: calc(100% - 48PX);
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     flex-direction: column;
     padding-inline: 24px;
 }
