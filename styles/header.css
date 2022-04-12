@@ -3,6 +3,7 @@
 .header{
     box-shadow: 0px 5px 5px var(--main-blue-light);
     padding-block: 6px;
+    width: 100%;
 }
 
 .header--wrapper{
